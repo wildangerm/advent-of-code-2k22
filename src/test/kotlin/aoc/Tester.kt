@@ -1,9 +1,6 @@
 package aoc
 
-import aoc.days.Day1
-import aoc.days.Day2
-import aoc.days.Day3
-import aoc.days.Day4
+import aoc.days.*
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
@@ -14,11 +11,11 @@ class Tester {
 
     @ParameterizedTest
     @MethodSource("generator")
-    fun testDays(input: BaseDay, part1Result: Int?, part2Result: Int?){
+    fun testDays(input: BaseDay, part1Result: Any?, part2Result: Any?){
         testParts(input, part1Result, part2Result)
     }
 
-    private fun testParts(day: BaseDay, part1Result: Int?, part2Result: Int?) {
+    private fun testParts(day: BaseDay, part1Result: Any?, part2Result: Any?) {
         println(day::class.simpleName)
 
         print("\tpart1: ")
@@ -44,8 +41,12 @@ class Tester {
 //                Arguments.of(Day2(getTestFileName(2)), 15, 12),
 //                Arguments.of(Day3(), null, null),
 //                Arguments.of(Day3(getTestFileName(3)), 157, 70),
-              Arguments.of(Day4(), null, null)
+//                Arguments.of(Day4(), null, null)
 //                Arguments.of(Day4(getTestFileName(4)), 2, 4)
+//                Arguments.of(Day5(), null, null)
+//                Arguments.of(Day5(getTestFileName(5)), "CMZ", "MCD")
+//                  Arguments.of(Day6(), null, null)
+                  Arguments.of(Day6(getTestFileName(6)), 7, 19)
             )
         }
 
