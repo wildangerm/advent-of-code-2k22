@@ -18,4 +18,9 @@ abstract class BaseDay(inputFile: String) {
     protected open fun readFile(inputFile: String) {
         inputList = ArrayList(getInput(inputFile))
     }
+
+    protected fun <T> println(result: T): T {
+        kotlin.io.println(result)
+        return result
+    }
 }

@@ -19,8 +19,7 @@ class Day5(inputFile: String = "input_5.txt") : BaseDay(inputFile) {
         }
 
         val result = stacks.joinToString("") { s -> s.first() }
-        println(result)
-        return result
+        return println(result)
     }
 
     override fun part2(): String {
@@ -41,8 +40,7 @@ class Day5(inputFile: String = "input_5.txt") : BaseDay(inputFile) {
         }
 
         val result = stacks.joinToString("") { s -> s.first() }
-        println(result)
-        return result
+        return println(result)
     }
 
     private fun getMoves(movesInput: List<String>): List<Move> {

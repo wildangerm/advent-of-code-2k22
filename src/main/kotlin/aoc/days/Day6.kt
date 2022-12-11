@@ -9,8 +9,7 @@ class Day6(inputFile: String = "input_6.txt") : BaseDay(inputFile) {
         val input = inputList.first().toCharArray().toList()
 
         val result = findMarker(input, 4)
-        println(result)
-        return result
+        return println(result)
     }
 
 
@@ -19,8 +18,7 @@ class Day6(inputFile: String = "input_6.txt") : BaseDay(inputFile) {
         val input = inputList.first().toCharArray().toList()
 
         val result = findMarkerV2(input, 14)
-        println(result)
-        return result
+        return println(result)
     }
 
     private fun findMarker(input: List<Char>, sizeOfMarker: Int): Int {

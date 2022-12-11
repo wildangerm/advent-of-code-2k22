@@ -16,8 +16,7 @@ class Day3(inputFile: String = "input_3.txt") : BaseDay(inputFile) {
             getPriority(inBoth.first())
         }
 
-        println(result)
-        return result
+        return println(result)
     }
 
     override fun part2(): Int {
@@ -31,8 +30,7 @@ class Day3(inputFile: String = "input_3.txt") : BaseDay(inputFile) {
             getPriority(common.first())
         }
 
-        println(result)
-        return result
+        return println(result)
     }
 
     private fun getPriority(char: Char): Int {

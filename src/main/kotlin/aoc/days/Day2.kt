@@ -13,8 +13,7 @@ class Day2(inputFile: String = "input_2.txt") : BaseDay(inputFile) {
             calculateScore(enemy, me)
         }
 
-        println(score)
-        return score
+        return println(score)
     }
 
     override fun part2(): Int {
@@ -41,8 +40,7 @@ class Day2(inputFile: String = "input_2.txt") : BaseDay(inputFile) {
             calculateScoreWithNeededOutcome(enemy, outCome, mx)
         }
 
-        println(score)
-        return score
+        return println(score)
     }
 
     private fun calculateScore(enemy: Char, me: Char): Int {

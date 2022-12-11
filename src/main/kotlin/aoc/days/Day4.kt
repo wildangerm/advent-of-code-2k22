@@ -15,8 +15,7 @@ class Day4(inputFile: String = "input_4.txt") : BaseDay(inputFile) {
             }
         }
 
-        println(result)
-        return result
+        return println(result)
     }
 
     override fun part2(): Int {
@@ -29,8 +28,7 @@ class Day4(inputFile: String = "input_4.txt") : BaseDay(inputFile) {
             }
         }
 
-        println(result)
-        return result
+        return println(result)
     }
 
     private fun List<String>.fullyContains(other: List<String>): Boolean {

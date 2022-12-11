@@ -46,8 +46,20 @@ class Tester {
 //                Arguments.of(Day5(), null, null)
 //                Arguments.of(Day5(getTestFileName(5)), "CMZ", "MCD")
 //                  Arguments.of(Day6(), null, null)
-                  Arguments.of(Day6(getTestFileName(6)), 7, 19)
+//                  Arguments.of(Day6(getTestFileName(6)), 7, 19)
+//                  Arguments.of(Day7(), null, null)
+//                  Arguments.of(Day7(getTestFileName(7)), 95437, 24933642)
+//                  Arguments.of(Day8(), null, null)
+//                  Arguments.of(Day8(getTestFileName(8)), 21, 8)
+//                  Arguments.of(Day9(), null, null)
+//                  Arguments.of(Day9(getTestFileName(9)), 13, 1)
+//                  Arguments.of(Day10(), null, null)
+//                  Arguments.of(Day10(getTestFileName(10)), 13140, null)
+                      Arguments.of(Day11(), null, null)
+//                  Arguments.of(Day11(getTestFileName(11)), 10605L, 2713310158L)
+
             )
+
         }
 
         private fun getTestFileName(num: Int): String {

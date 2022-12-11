@@ -21,8 +21,7 @@ class Day1(inputFile: String = "input_1.txt") : BaseDay(inputFile) {
             }
         }
 
-        println(max)
-        return max
+        return println(max)
     }
 
     override fun part2(): Int {
@@ -42,8 +41,6 @@ class Day1(inputFile: String = "input_1.txt") : BaseDay(inputFile) {
 
         val top3 = caloriesByElves.sortedDescending().take(3).sum()
 
-        println(top3)
-
-        return top3
+        return println(top3)
     }
 }
